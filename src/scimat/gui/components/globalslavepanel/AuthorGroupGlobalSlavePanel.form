@@ -1,0 +1,112 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="authorInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="authorGroupInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="hideAndShowAuthorGroupPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+                  <Component id="hideAndShowAuthorPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="hideAndShowAuthorGroupPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="authorGroupInfoPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="hideAndShowAuthorPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="authorInfoPanel" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowAuthorGroupPanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowAuthorGroupPanel.setDescription(&quot;Author group info&quot;);&#xd;&#xa;this.hideAndShowAuthorGroupPanel.setPanel(this.authorGroupInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="authorGroupInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="313" max="32767" attributes="0"/>
+                  <Component id="updateAuthorGroupButton" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Component id="authorGroupDetailPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <Component id="authorGroupDetailPanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="updateAuthorGroupButton" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.detailspanel.AuthorGroupDetailPanel" name="authorGroupDetailPanel">
+        </Component>
+        <Component class="javax.swing.JButton" name="updateAuthorGroupButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Update"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateAuthorGroupButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowAuthorPanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowAuthorPanel.setDescription(&quot;Authors info&quot;);&#xd;&#xa;this.hideAndShowAuthorPanel.setPanel(this.authorInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="authorInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="authorGroupSlaveAuthorsPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="authorGroupSlaveAuthorsPanel" alignment="0" pref="149" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.slavepanel.AuthorGroupSlaveAuthorsPanel" name="authorGroupSlaveAuthorsPanel">
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

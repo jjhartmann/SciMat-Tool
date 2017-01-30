@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="mainMenuBar">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="fileMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="File"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="scimat.gui.components.NewProjectMenuItem" name="newProjectMenuItem">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+N"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/newProject16x16.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="New project"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="newProjectMenuItemActionPerformed"/>
+              </Events>
+            </Menu>
+            <Menu class="scimat.gui.components.OpenProjectMenuItem" name="openProjectMenuItem">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+O"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/openProject16x16.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Open project"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="openProjectMenuItemActionPerformed"/>
+              </Events>
+            </Menu>
+            <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="closeProjectMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Close project"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closeProjectMenuItemActionPerformed"/>
+              </Events>
+            </Menu>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="separator1">
+            </MenuItem>
+            <Menu class="javax.swing.JMenu" name="addFilesMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Add files"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="importFromISIWoSMenuItem">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/images/Document-Add16x16.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="In ISIWoS format"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="importFromISIWoSMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="importFromRISMenuItem">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/images/Document-Add16x16.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="In RIS (Old format)"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="importFromRISMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="importFromRISMay2014MenuItem">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/images/Document-Add16x16.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="In RIS (May 2014 format)"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="importFromRISMay2014MenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="importFromCsvMenuItem">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/images/Document-Add16x16.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="In Csv format"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="importFromCsvMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="exportMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Export"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="exportGroupsMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Groups"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exportGroupsMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="importMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Import"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="importGroupsMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Groups"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="importGroupsMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="separator2">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="exitMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Exit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exitMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="editMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="globalReplaceMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Global replace"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceAffiliationMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Affiliation"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceAffiliationMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceAuthorMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Author"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceAuthorMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceAuthorGroupMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Author Group"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceAuthorGroupMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceAuthorReferenceMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Author-Reference"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceAuthorReferenceMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceAuthorReferenceGroupMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Author-Reference Group"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceAuthorReferenceGroupMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceJournalMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Journal"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceJournalMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceDocumentMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Document"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceDocumentMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplacePeriodMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Period"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplacePeriodMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplacePublishDateMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Publish date"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplacePublishDateMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceReferenceMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Reference"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceReferenceMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceReferenceGroupMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Reference Group"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceReferenceGroupMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceReferenceSourceMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Reference-Source"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceReferenceSourceMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceReferenceSourceGroupMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Reference-Source Group"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceReferenceSourceGroupMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceSubjectCategoryMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Subject Category"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceSubjectCategoryMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceWordMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Word"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceWordMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="globalReplaceWordGroupMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Word Group"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="globalReplaceWordGroupMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="separator3">
+            </MenuItem>
+            <Menu class="scimat.gui.components.UndoMenuItem" name="undoMenuItem1">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+Z"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/edit-undo16x16.png"/>
+                </Property>
+              </Properties>
+            </Menu>
+            <Menu class="scimat.gui.components.RedoMenuItem" name="redoMenuItem1">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+Y"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/edit-redo16x16.png"/>
+                </Property>
+              </Properties>
+            </Menu>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="knowledgeBaseMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Knowledge base"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="authorsMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Authors"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="authorsManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Authors manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="authorsManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="authorsGroupsManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Authors groups manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="authorsGroupsManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="affiliationsManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Affiliations manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="affiliationsManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="documentsMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Documents"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="documentsManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Documents manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="documentsManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="journalsMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Journals"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="journalsManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Journals manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="journalsManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="referencesMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="References"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="referencesManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="References manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="referencesManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="referencesGroupsManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="References groups manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="referencesGroupsManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="authorsReferenceManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Authors-reference manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="authorsReferenceManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="authorsReferencesGroupManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Authors-reference groups manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="authorsReferencesGroupManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="referencesSourceManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Sources-reference manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="referencesSourceManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="referencesSourceGroupsManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Sources-reference groups manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="referencesSourceGroupsManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="periodsMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Periods"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="periodsManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Periods manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="periodsManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="publishDatesMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Publish dates"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="publishDatesManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Publish dates manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="publishDatesManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="subjectCategoriesMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Subject categories"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="subjectCategoriesMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Subject categories manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="subjectCategoriesMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="wordsMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Words"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="wordsManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Words manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wordsManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="wordsGroupsManagerMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Words groups manager"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wordsGroupsManagerMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="groupSetMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Group set"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="authorGroupMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Author"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="authorGroupManualSetMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Author group manual set"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="authorGroupManualSetMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="findSimilarAuthorsByDistanceMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Find similar authors by distances"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="findSimilarAuthorsByDistanceMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="authorReferenceGroupMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Author-reference"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="authorReferenceGroupManualSetMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Authors-reference group manual set"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="authorReferenceGroupManualSetMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="findSimilarAuthorReferencesByDistanceMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Find similar author references by distances"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="findSimilarAuthorReferencesByDistanceMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="referenceGroupMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Reference"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="referenceGroupManualSetMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Reference group manual set"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="referenceGroupManualSetMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="findSimilarReferencesByDistanceMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Find similar references by distances"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="findSimilarReferencesByDistanceMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="referenceSourceMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Source-reference"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="referenceSourceGroupManualSetMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Sources-reference group manual set"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="referenceSourceGroupManualSetMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="findSimilarReferenceSourcesByDistanceMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Find similar sources-reference by distances"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="findSimilarReferenceSourcesByDistanceMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="wordGroupMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Word"/>
+              </Properties>
+              <SubComponents>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="wordGroupManualSetMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Word group manual set"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wordGroupManualSetMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="findSimilarWordsByPluralsMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Find similar words by plurals"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="findSimilarWordsByPluralsMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="findSimilarWordsByPluralsAutomaticMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Find similar words by plurals (automatic)"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="findSimilarWordsByPluralsAutomaticMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="findSimilarWordsByDistanceMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Find similar words by distances"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="findSimilarWordsByDistanceMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+                <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="findSimilarWordsGroupByDistanceMenuItem">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Find similar words group by distances"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="findSimilarWordsGroupByDistanceMenuItemActionPerformed"/>
+                  </Events>
+                </Menu>
+              </SubComponents>
+            </Menu>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="analysisMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Analysis"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="makeAnalysisMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Make analysis"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="makeAnalysisMenuItemActionPerformed"/>
+              </Events>
+            </Menu>
+            <MenuItem class="javax.swing.JMenuItem" name="loadAnalysisMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Load analysis"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loadAnalysisMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="statisticMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Statistics"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="authorGroupStatisticsMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Author groups statistics"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="authorGroupStatisticsMenuItemActionPerformed"/>
+              </Events>
+            </Menu>
+            <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="referenceGroupStatisticsMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Reference groups statistics"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="referenceGroupStatisticsMenuItemActionPerformed"/>
+              </Events>
+            </Menu>
+            <Menu class="scimat.gui.components.KnowledgeBaseStateObserverMenuItem" name="wordGroupStatisticsMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Word groups statistics"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wordGroupStatisticsMenuItemActionPerformed"/>
+              </Events>
+            </Menu>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="helpMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Help"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="aboutMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="About"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aboutMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="0"/>
+    <Property name="title" type="java.lang.String" value="SciMAT 1.1.04"/>
+    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+      <Color id="Cursor Por defecto"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="mainMenuBar"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowClosing" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowClosing"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="toolBarPanel" alignment="0" max="32767" attributes="0"/>
+          <Component id="mainPanel" alignment="0" pref="959" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="toolBarPanel" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="mainPanel" pref="537" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="toolBarPanel">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="fileToolBar" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="editToolBar" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="815" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="fileToolBar" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="editToolBar" alignment="0" min="-2" pref="25" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JToolBar" name="fileToolBar">
+          <Properties>
+            <Property name="floatable" type="boolean" value="false"/>
+            <Property name="rollover" type="boolean" value="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="scimat.gui.components.NewProjectToolBarButton" name="newProjectToolBarButton">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="newProjectToolBarButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="scimat.gui.components.OpenProjectToolBarButton" name="openProjectToolBarButton">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="openProjectToolBarButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JToolBar" name="editToolBar">
+          <Properties>
+            <Property name="floatable" type="boolean" value="false"/>
+            <Property name="rollover" type="boolean" value="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JToolBar$Separator" name="jSeparator1">
+            </Component>
+            <Component class="scimat.gui.components.UndoToolBarButton" name="undoToolBarButton">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="undoToolBarButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="scimat.gui.components.RedoToolBarButton" name="redoToolBarButton">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="redoToolBarButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="mainPanel">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+    </Container>
+  </SubComponents>
+</Form>

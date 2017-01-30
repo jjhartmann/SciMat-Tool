@@ -1,0 +1,143 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="documentInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="authorInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="affiliationInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="hideAndShowAffiliationPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+                  <Component id="hideAndShowAuthorPanel" alignment="0" pref="380" max="32767" attributes="2"/>
+                  <Component id="hideAndShowDocumentPanel" alignment="0" pref="380" max="32767" attributes="2"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="hideAndShowAffiliationPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="affiliationInfoPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="hideAndShowAuthorPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="authorInfoPanel" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="hideAndShowDocumentPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="documentInfoPanel" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowAffiliationPanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowAffiliationPanel.setDescription(&quot;Affiliation info&quot;);&#xd;&#xa;this.hideAndShowAffiliationPanel.setPanel(this.affiliationInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="affiliationInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="affiliationDetailPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="updateAffiliationButton" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="affiliationDetailPanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="updateAffiliationButton" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.detailspanel.AffiliationDetailPanel" name="affiliationDetailPanel">
+        </Component>
+        <Component class="javax.swing.JButton" name="updateAffiliationButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Update"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateAffiliationButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowAuthorPanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowAuthorPanel.setDescription(&quot;Authors info&quot;);&#xd;&#xa;this.hideAndShowAuthorPanel.setPanel(this.authorInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="authorInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="affiliationSlaveAuthorsPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="affiliationSlaveAuthorsPanel" pref="120" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.slavepanel.AffiliationSlaveAuthorsPanel" name="affiliationSlaveAuthorsPanel">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowDocumentPanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowDocumentPanel.setDescription(&quot;Documents info&quot;);&#xd;&#xa;this.hideAndShowDocumentPanel.setPanel(this.documentInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="documentInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="affiliationSlaveDocumentsPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="affiliationSlaveDocumentsPanel" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.slavepanel.AffiliationSlaveDocumentsPanel" name="affiliationSlaveDocumentsPanel">
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

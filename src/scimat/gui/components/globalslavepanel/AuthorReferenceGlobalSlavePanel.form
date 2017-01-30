@@ -1,0 +1,180 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="referenceInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="authorReferenceGroupInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="authorReferenceInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="hideAndShowAuthorReferencePanel" alignment="0" pref="391" max="32767" attributes="0"/>
+                  <Component id="hideAndShowAuthorReferenceGroupPanel" alignment="0" pref="391" max="32767" attributes="2"/>
+                  <Component id="authorInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="hideAndShowAuthorPanel" alignment="0" pref="391" max="32767" attributes="0"/>
+                  <Component id="hideAndShowReferencePanel" alignment="0" pref="391" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="hideAndShowAuthorReferencePanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="authorReferenceInfoPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="hideAndShowAuthorReferenceGroupPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="authorReferenceGroupInfoPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="hideAndShowAuthorPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="authorInfoPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="hideAndShowReferencePanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="referenceInfoPanel" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowAuthorReferencePanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowAuthorReferencePanel.setDescription(&quot;Authors-reference info&quot;);&#xd;&#xa;this.hideAndShowAuthorReferencePanel.setPanel(this.authorReferenceInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="authorReferenceInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="324" max="32767" attributes="0"/>
+                  <Component id="updateAuthorReferenceButton" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Component id="authorReferenceDetailPanel" alignment="0" pref="391" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <Component id="authorReferenceDetailPanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="updateAuthorReferenceButton" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.detailspanel.AuthorReferenceDetailPanel" name="authorReferenceDetailPanel">
+        </Component>
+        <Component class="javax.swing.JButton" name="updateAuthorReferenceButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Update"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateAuthorReferenceButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowAuthorReferenceGroupPanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowAuthorReferenceGroupPanel.setDescription(&quot;Authors-reference group info&quot;);&#xd;&#xa;this.hideAndShowAuthorReferenceGroupPanel.setPanel(this.authorReferenceGroupInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="authorReferenceGroupInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="authorReferenceSlaveAuthorReferenceGroupPanel" alignment="0" pref="391" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="authorReferenceSlaveAuthorReferenceGroupPanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="21" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.slavepanel.AuthorReferenceSlaveAuthorReferenceGroupPanel" name="authorReferenceSlaveAuthorReferenceGroupPanel">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowAuthorPanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowAuthorPanel.setDescription(&quot;Author reference group info&quot;);&#xd;&#xa;this.hideAndShowAuthorPanel.setPanel(this.authorInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="authorInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="authorReferenceSlaveAuthorPanel" alignment="1" pref="391" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="authorReferenceSlaveAuthorPanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="27" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.slavepanel.AuthorReferenceSlaveAuthorPanel" name="authorReferenceSlaveAuthorPanel">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowReferencePanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowReferencePanel.setDescription(&quot;Reference info&quot;);&#xd;&#xa;this.hideAndShowReferencePanel.setPanel(this.referenceInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="referenceInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="authorReferenceSlaveReferencesPanel" alignment="0" pref="391" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="authorReferenceSlaveReferencesPanel" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.slavepanel.AuthorReferenceSlaveReferencesPanel" name="authorReferenceSlaveReferencesPanel">
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

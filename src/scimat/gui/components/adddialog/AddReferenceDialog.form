@@ -1,0 +1,181 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Add document"/>
+    <Property name="alwaysOnTop" type="boolean" value="true"/>
+    <Property name="modal" type="boolean" value="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jSeparator1" alignment="0" pref="382" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="fullReferenceDescriptionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="issueDescriptionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="doiDescriptionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="formatDescriptionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="doiTextField" alignment="0" pref="308" max="32767" attributes="2"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="issueTextField" min="-2" pref="40" max="-2" attributes="2"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="volumeDescriptionLabel" pref="43" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="volumeTextField" pref="36" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="pagesDescriptionLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="pagesTextField" pref="36" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="yearDescriptionLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="yearTextField" pref="70" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="fullReferenceTextField" alignment="0" pref="308" max="32767" attributes="2"/>
+                          <Component id="formatTextField" alignment="0" pref="308" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="addButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="cancelButton" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="fullReferenceDescriptionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fullReferenceTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" max="-2" attributes="0">
+                  <Component id="issueDescriptionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="issueTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="volumeDescriptionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="pagesDescriptionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="volumeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="pagesTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="yearDescriptionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="yearTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="doiDescriptionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="doiTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="formatDescriptionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="formatTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cancelButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="addButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="addButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Add"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="cancelButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancel"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="formatDescriptionLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Format:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="formatTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="fullReferenceDescriptionLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Full reference:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fullReferenceTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="issueDescriptionLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Issue:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="issueTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="volumeDescriptionLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Volume:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="volumeTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="pagesDescriptionLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pages:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="pagesTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="yearDescriptionLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Year:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="yearTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="doiDescriptionLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Doi:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="doiTextField">
+    </Component>
+  </SubComponents>
+</Form>

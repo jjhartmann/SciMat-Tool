@@ -1,0 +1,287 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="referenceSourceInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="referenceGroupInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="referenceInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="hideAndShowReferencePanel" alignment="0" pref="380" max="32767" attributes="0"/>
+                  <Component id="hideAndShowReferenceGroupPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+                  <Component id="hideAndShowReferenceSourcePanel" alignment="0" pref="380" max="32767" attributes="0"/>
+                  <Component id="hideAndShowDocumentPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+                  <Component id="documentInfoPanel" alignment="0" max="32767" attributes="0"/>
+                  <Component id="hideAndShowAuthorReferencePanel" alignment="0" max="32767" attributes="1"/>
+                  <Component id="authorReferenceInfoPanel" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="hideAndShowReferencePanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="referenceInfoPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="hideAndShowReferenceGroupPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="referenceGroupInfoPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="hideAndShowReferenceSourcePanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="referenceSourceInfoPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="hideAndShowDocumentPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="documentInfoPanel" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="hideAndShowAuthorReferencePanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="authorReferenceInfoPanel" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowReferencePanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowReferencePanel.setDescription(&quot;Reference info&quot;);&#xd;&#xa;this.hideAndShowReferencePanel.setPanel(this.referenceInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="referenceInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="313" max="32767" attributes="0"/>
+                  <Component id="updateReferenceButton" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Component id="referenceDetailPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <Component id="referenceDetailPanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="updateReferenceButton" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="updateReferenceButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Update"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateReferenceButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="scimat.gui.components.detailspanel.ReferenceDetailPanel" name="referenceDetailPanel">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowReferenceGroupPanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowReferenceGroupPanel.setDescription(&quot;Reference group info&quot;);&#xd;&#xa;this.hideAndShowReferenceGroupPanel.setPanel(this.referenceGroupInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="referenceGroupInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="referenceSlaveReferenceGroupPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="referenceSlaveReferenceGroupPanel" min="-2" max="-2" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.slavepanel.ReferenceSlaveReferenceGroupPanel" name="referenceSlaveReferenceGroupPanel">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowReferenceSourcePanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowReferenceSourcePanel.setDescription(&quot;Reference source info&quot;);&#xd;&#xa;this.hideAndShowReferenceSourcePanel.setPanel(this.referenceSourceInfoPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="referenceSourceInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="referenceSlaveReferenceSourcePanel" alignment="0" pref="380" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="addReferenceSourceButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="deleteReferenceSourceButton" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Component id="referenceSlaveReferenceSourcePanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="addReferenceSourceButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="deleteReferenceSourceButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.slavepanel.ReferenceSlaveReferenceSourcePanel" name="referenceSlaveReferenceSourcePanel">
+        </Component>
+        <Component class="javax.swing.JButton" name="addReferenceSourceButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Set"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addReferenceSourceButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="scimat.gui.components.SlaveItemObserverButton" name="deleteReferenceSourceButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Delete"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteReferenceSourceButtonActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.referenceSlaveReferenceSourcePanel.addSlaveItemObserver(this.deleteReferenceSourceButton);"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowDocumentPanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowDocumentPanel.setDescription(&quot;Citing documents info&quot;);&#xd;&#xa;this.hideAndShowDocumentPanel.setPanel(this.referenceSlaveDocumentsPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="documentInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="referenceSlaveDocumentsPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="referenceSlaveDocumentsPanel" alignment="0" pref="131" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.slavepanel.ReferenceSlaveDocumentsPanel" name="referenceSlaveDocumentsPanel">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="scimat.gui.components.HideAndShowPanel" name="hideAndShowAuthorReferencePanel">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="this.hideAndShowAuthorReferencePanel.setDescription(&quot;Author references info&quot;);&#xd;&#xa;this.hideAndShowAuthorReferencePanel.setPanel(this.referenceSlaveAuthorReferencesPanel);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="authorReferenceInfoPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="addAuthorReferenceButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="updateAuthorReferencePositionButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                  <Component id="deleteAuthorReferencesButton" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Component id="referenceSlaveAuthorReferencesPanel" alignment="0" pref="380" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <Component id="referenceSlaveAuthorReferencesPanel" pref="158" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="deleteAuthorReferencesButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="updateAuthorReferencePositionButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="addAuthorReferenceButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="scimat.gui.components.slavepanel.ReferenceSlaveAuthorReferencesPanel" name="referenceSlaveAuthorReferencesPanel">
+        </Component>
+        <Component class="javax.swing.JButton" name="addAuthorReferenceButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Add"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addAuthorReferenceButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="scimat.gui.components.SelectionObserverButton" name="updateAuthorReferencePositionButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Update position"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updateAuthorReferencePositionButtonActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new SelectionObserverButton(1,1)"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="this.referenceSlaveAuthorReferencesPanel.addSelectionObserver(this.updateAuthorReferencePositionButton);"/>
+          </AuxValues>
+        </Component>
+        <Component class="scimat.gui.components.SelectionObserverButton" name="deleteAuthorReferencesButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Delete"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteAuthorReferencesButtonActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new SelectionObserverButton(1,-1)"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="this.referenceSlaveAuthorReferencesPanel.addSelectionObserver(this.deleteAuthorReferencesButton);"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

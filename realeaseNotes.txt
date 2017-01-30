@@ -1,0 +1,17 @@
+Release notes SciAMT v1.1.04
+----------------------------
+- Bugs fixed.
+
+Release notes SciAMT v1.1.03
+----------------------------
+- Bugs fixed.
+
+Release notes SciAMT v1.1.02
+----------------------------
+- The visualization of evolution map has been improved.
+- New automatic way to detect similar words by plurals.
+
+Release notes SciAMT v1.1.01
+----------------------------
+- The performance has been increased
+- Some bugs has been fixed
